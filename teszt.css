@@ -1,0 +1,45 @@
+body {
+    background-color: lightblue;
+}
+.jelszo {
+    padding:5px; 
+    border:2px groove black; 
+    -webkit-border-radius: 1px;
+    border-radius: 1px;
+}
+
+.jelszo:focus {
+    border-color:#333;
+}
+.gomb {
+    padding:5px 15px; 
+    background: #33cc33; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 55px;
+    border-radius: 55px; 
+}
+.gomb:hover {
+    background: #009933;
+}
+.szoveg {
+    font-size: 30pt;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    width: 15%;
+    margin: auto;
+    margin-top: 2%;
+    transition-timing-function: ease-in-out;
+    transition: transform 0.2s, text-shadow 0.2s;
+}
+.szoveg:hover {
+    transform: scale(1.5);
+    text-shadow: 5px 5px 5px black;
+}
+.logo {
+    transition-timing-function: ease-in-out;
+    transition: transform 1s, opacity 1s;
+    position: fixed; top:20px;
+    width: 100px;
+    opacity: 0;
+}

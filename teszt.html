@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Teszt</title>
+    <link rel="stylesheet" href="teszt.css" type="text/css">
+</head>
+<script type="text/javascript" src="teszt.js"></script>
+<body onload="logo()">
+    <form onsubmit="return jelszoEllenorzes()" action="https://www.google.hu">
+        <p class="szoveg">Írd be a jelszavad</p><br/>
+        <input class="jelszo" style="margin-left: 45%" type="text" id="jelszoDoboz" placeholder="Jelszó"><br/>
+        <input class="gomb" style="margin-left: 48%; margin-top: 20px;" type="submit" value="Mehet!"><br/>
+    </form>
+    <img id="logo" class="logo" src="5547-256x256x8.png" alt="Minecraft"  onmouseover="logoHover()" onmouseleave="logoRestore()">
+</body>
+</html>
