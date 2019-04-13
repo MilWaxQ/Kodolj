@@ -1,7 +1,6 @@
     function jelszoEllenorzes() {
         var jelszo = document.getElementById("jelszoDoboz");
             if(jelszo.value== "asdfasz") {
-                logoHover()
                 alert("Sikeres Belépés!")
                 return true;
             }
