@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Jelszó</title>
+    <style>
+        body {
+            background-color: lightblue;
+            padding: 30px;
+        }
+    </style>
+    <script>
+        function jelszoEllenorzes() {
+            var jelszo = document.getElementById("jelszoDoboz");
+            var beirtJelszo = jelszo.value;
+            if(beirtJelszo == "Ernest300") {
+                alert("Sikeres Belépés! Átirányítás folyamatban!")
+                return true;
+            }
+            alert("Hozzáférés megtagadva! Helytelen jelszó!");
+            return false;
+        }
+    </script>
+</head>
+<body>
+    <p style="font-size: 30pt;">A MONK-GYÉMÁNT FELFEDEZÉSE</p>
+    <p>A weblap eléréséhez add meg a jelszót!</p>
+    <p>Jelszó:<input type="password" id="jelszoDoboz"/></p>
+    <a href=Kuldi1.html onclick="return jelszoEllenorzes();">A jelszó elküldéséhez és a weblap felkereséséhez kattints ide</a>
+</body>
+</html>
