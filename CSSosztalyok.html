@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Minecraft</title>
+        <link rel="shortcut icon" href="5547-256x256x8.png" type="image/png" />
+        <link rel="stylesheet" href="style.css" type="text/css" />
+        <script>
+            function logo() {
+                document.getElementById("asd").style.opacity = "1";
+            }
+            function logohover() {
+                document.getElementById("asd").style.opacity = "0";
+            }
+            function logorestore() {
+                document.getElementById("asd").style.opacity = "1";
+            }
+        </script>
+    </head>
+    <body onload="logo()">
+        <div class=fejlec>
+            <a href="https://Minecraft.net" target="_blank">A Minecraft</a>
+        </div>
+        <br/>
+        <div class=cimsor>
+            Az ellopott gyémánt egy szibériai expedíció során került elő!
+        </div>
+        <br/>
+        <div class=szovegtorzs>
+            Gyere fő<br/>
+            IP: valami
+        </div>
+        <img id="asd" class=logo src="5547-256x256x8.png" alt="Minecraft" onmouseover="logohover()" onmouseleave="logorestore()">
+    </body>
+</html>
