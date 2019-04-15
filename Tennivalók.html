@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tennivalók listája</title>
+    <script>
+        function tennivaloBeiras() {
+            var ujElem = document.createElement("div");
+            ujElem.innerHTML = document.getElementById("doboz").value;
+            ujElem.onlcick = elemTorles;
+            document.getElementById("lista").appendChild(ujElem);
+            listaMentes();
+        }
+        function elemTorles() {
+            document.getElementById("lista").removeChild(this);
+            listaMentes();
+        }
+        function listaMentes() {
+            localStorage.taroltLista = document.getElementById("lista").innerHTML;
+        }
+        function listaBetoltes() {
+            document.getElementById("lista").innerHTML = localStorage.taroltLista;
+            for(var i = 0; i < lista.children.length; i++) {
+                lista.children[i].onclick = elemTorles;
+            }
+        }
+    </script>
+     <style>
+            .fejlec {
+              height:75px; 
+              width: 350px; 
+              background-color:lightblue; 
+              float: center; 
+              padding:10px; 
+              margin:20px;
+              text-align:center; 
+              font-size:24px;
+            }
+            .app {
+              height:600px;
+              width: 350px; 
+              background-color:lightgreen; 
+              float: center; 
+              padding:10px; 
+              margin:20px;
+            }
+            input[type="button"] {
+             background-color: pink;
+            }
+           </style>
+</head>
+<body onload="alert(localStorage.taroltLista)">
+    <p>Volkov-ház</p>
+    <p>Tennivalók a különleges kiállítás előtt</p>
+    <br/>
+    <input type="text" id="doboz" placeholder="Tennivaló beírása"/>
+    <br/>
+    <input type="submit" value="Hozzáadás a listához" onclick="tennivaloBeiras();"/>
+    <br/>
+    <div id="lista"></div>
+    <script>
+        if(localStorage.taroltLista) {
+            listaBetoltes();
+        }
+    </script>
+</body>
+</html>
